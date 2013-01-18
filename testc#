@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+
+        static void Main()
+        {
+            point p1 = new point(50,60);
+           
+            p1.display();
+            Console.ReadLine();
+        }
+        struct point
+        {
+            public int x;
+            public int y;
+            public point(int xPos, int yPos)
+            {
+                x = xPos;
+                y = yPos;
+            }
+            public void inc()
+            { x++; y++; }
+            public void decr()
+            { x--; y--; }
+            public void display()
+            { Console.WriteLine("X = {0}, Y={1}", x, y); }
+        }
+     }     
+       
+         
+    }
+
+
+
